@@ -1,0 +1,19 @@
+body{
+
+
+}
+
+.a{
+display: inline-block;
+}
+
+.actions {
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+table {
+  border: 2px solid #555;
+  border-collapse: collapse;
+  font: 16px "Lucida Grande", "Helvetica", "Arial", sans-serif;
+}

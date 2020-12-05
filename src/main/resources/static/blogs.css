@@ -12,8 +12,15 @@ display: inline-block;
     margin-top: 20px;
 }
 
-table {
+.table {
   border: 2px solid #555;
   border-collapse: collapse;
   font: 16px "Lucida Grande", "Helvetica", "Arial", sans-serif;
+}
+
+.table thead {
+    border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 5px;
+    background-color: lightgray;
 }

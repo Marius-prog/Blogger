@@ -23,15 +23,32 @@ public class Blog {
 
     private String description;
 
-//    private BigDecimal price;
+    private BigDecimal date;
 
     @CreationTimestamp
     private Date createdAt;
 
-//    @UpdateTimestamp
-//    Instant updatedAt = Instant.now();
-
     @UpdateTimestamp
-    Instant updatedAt = Instant.now();
+    private Date updatedAt;
 
 }
+
+//@Entity
+//@Data
+//public class Product {
+//    @Id
+//    @GeneratedValue(strategy = GenerationType.IDENTITY)
+//    private Long id;
+//
+//    private String name;
+//
+//    private String description;
+//
+//    private BigDecimal price;
+//
+//    @CreationTimestamp
+//    private Date createdAt;
+//
+//    @UpdateTimestamp
+//    private Date updatedAt;
+//}

@@ -62,7 +62,7 @@ var List = Vue.extend({
             return this.blogs.filter((blog) => {
                 return blog.name.indexOf(this.searchKey) > -1
                     || blog.description.indexOf(this.searchKey) > -1
-                    || blog.price.toString().indexOf(this.searchKey) > -1
+                    || blog.date.toString().indexOf(this.searchKey) > -1
             })
         }
     },

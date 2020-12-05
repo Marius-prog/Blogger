@@ -3,11 +3,10 @@ package com.example.myBlog.entity;
 import lombok.Data;
 import org.hibernate.annotations.CreationTimestamp;
 import org.hibernate.annotations.UpdateTimestamp;
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+
+import javax.persistence.*;
 import java.math.BigDecimal;
+import java.sql.Timestamp;
 import java.time.Instant;
 import java.util.Date;
 
@@ -25,12 +24,22 @@ public class Blog {
 
     private BigDecimal date;
 
-    @CreationTimestamp
-    private Date createdAt;
+//    @CreationTimestamp
+//    private Date createdAt;
+//
+//    @UpdateTimestamp
+//    private Date updatedAt;
 
-    @UpdateTimestamp
-    private Date updatedAt;
+    Instant instant = Instant.now();
 
+    Timestamp createdAt = Timestamp.from(instant);
+    Timestamp updatedAt = Timestamp.from(instant);
+
+//    @Temporal(TemporalType.TIMESTAMP)
+//    private Date createdAt;
+//
+//    @Temporal(TemporalType.TIMESTAMP)
+//    private Date updatedAt;
 }
 
 //@Entity

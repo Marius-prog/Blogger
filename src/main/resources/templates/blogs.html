@@ -47,7 +47,7 @@
         </div>
         <div class="filters row">
             <div class="form-group col-sm-3">
-                <input class="form-control" id="search-element" placeholder="Search" requred v-model="searchKey"/>
+                <input class="form-control" id="search-element" placeholder="Search by timestamp" requred v-model="searchKey"/>
             </div>
         </div>
 
@@ -82,7 +82,7 @@
                     <a class="btn btn-info">
                         <router-link :to="{name: 'blog-edit', params: {blog_id: blog.id}}">Edit</router-link>
                     </a>
-                    <a class="btn btn-primary">
+                    <a class="btn btn-info">
                         <router-link :to="{name: 'blog-delete', params: {blog_id: blog.id}}">Delete
                         </router-link>
                     </a>

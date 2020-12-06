@@ -16,7 +16,7 @@ top: 100px;
   position: relative;
   border: 0px
   padding: 0px;
-  top: 100px;
+  top: 10px;
 
 }
 
@@ -24,9 +24,9 @@ top: 100px;
   padding: 30px;
   font-size: 40px;
   text-align: center;
-  background: lightgray;
+  background: lightblue;
   width: 100%;
-  position: fixed;
+
 }
 
 .a{

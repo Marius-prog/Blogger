@@ -24,40 +24,10 @@ public class Blog {
 
     private BigDecimal date;
 
-//    @CreationTimestamp
-//    private Date createdAt;
-//
-//    @UpdateTimestamp
-//    private Date updatedAt;
+    @CreationTimestamp
+    private Date createdAt;
 
-    Instant time = Instant.now();
+    @UpdateTimestamp
+    private Date updatedAt;
 
-    Timestamp createdAt = Timestamp.from(time);
-    Timestamp updatedAt = Timestamp.from(time);
-
-//    @Temporal(TemporalType.TIMESTAMP)
-//    private Date createdAt;
-//
-//    @Temporal(TemporalType.TIMESTAMP)
-//    private Date updatedAt;
 }
-
-//@Entity
-//@Data
-//public class Product {
-//    @Id
-//    @GeneratedValue(strategy = GenerationType.IDENTITY)
-//    private Long id;
-//
-//    private String name;
-//
-//    private String description;
-//
-//    private BigDecimal price;
-//
-//    @CreationTimestamp
-//    private Date createdAt;
-//
-//    @UpdateTimestamp
-//    private Date updatedAt;
-//}

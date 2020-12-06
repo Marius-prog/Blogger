@@ -5,7 +5,7 @@
     <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
     <meta content="" name="description">
     <meta content="" name="author">
-    <title>Blogs</title>
+    <title>Blog home</title>
     <link href="https://unpkg.com/bootstrap@3.4.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="/blogs.css" rel="stylesheet"/>
 </head>
@@ -15,12 +15,17 @@
     <div class="header">
         <h1><center>Blogger</center></h1>
     </div>
-
+<hr>
     <div class="sidenav">
         <a>Blog</a>
         <a>Live</a>
         <a>Motion</a>
         <a>Travel</a>
+    </div>
+
+    <div class="sidenavv">
+        <a>Blog</a>
+
     </div>
 
     <main id="app">
@@ -81,7 +86,7 @@
                         </router-link>
                     </a>
                 </td>
-                <td width="30%" height="25%">{{ blog.description }}</td>
+                <td width="60%" height="25%">{{ blog.description }}</td>
                 <td>
                     {{ blog.date }}
                     <span aria-hidden="true" class="glyphicon glyphicon-time"></span>
@@ -123,7 +128,7 @@
 <!--                                <input class="form-control" id="add-price" type="number" v-model="product.price"/>-->
                 <input class="form-control" id="add-date" type="number" v-model="blog.date"/>
             </div>
-            <button class="btn btn-primary" type="submit">Create</button>
+            <button class="btn btn-info" type="submit">Create</button>
             <a class="btn btn-default">
                 <router-link to="/">Cancel</router-link>
             </a>
@@ -141,13 +146,13 @@
             </div>
             <div class="form-group">
                 <label for="edit-description">Description</label>
-                <textarea class="form-control" id="edit-description" rows="3" v-model="blog.description"></textarea>
+                <textarea class="form-control" id="edit-description" rows="10" v-model="blog.description"></textarea>
             </div>
             <div class="form-group">
                 <label for="edit-date">Date, <span class="glyphicon glyphicon-time"></span></label>
                 <input class="form-control" id="edit-date" type="number" v-model="blog.date"/>
             </div>
-            <button class="btn btn-primary" type="submit">Save</button>
+            <button class="btn btn-info" type="submit">Save</button>
             <a class="btn btn-default">
                 <router-link to="/">Cancel</router-link>
             </a>

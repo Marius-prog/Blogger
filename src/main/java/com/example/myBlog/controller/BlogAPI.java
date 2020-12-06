@@ -19,7 +19,7 @@ import java.util.Optional;
 public class BlogAPI {
 
     @Autowired
-    private final BlogService blogService;
+    private  BlogService blogService;
 
     @GetMapping
     public ResponseEntity<List<Blog>> findAll() {

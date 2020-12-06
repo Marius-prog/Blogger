@@ -30,10 +30,10 @@ public class Blog {
 //    @UpdateTimestamp
 //    private Date updatedAt;
 
-    Instant instant = Instant.now();
+    Instant time = Instant.now();
 
-    Timestamp createdAt = Timestamp.from(instant);
-    Timestamp updatedAt = Timestamp.from(instant);
+    Timestamp createdAt = Timestamp.from(time);
+    Timestamp updatedAt = Timestamp.from(time);
 
 //    @Temporal(TemporalType.TIMESTAMP)
 //    private Date createdAt;

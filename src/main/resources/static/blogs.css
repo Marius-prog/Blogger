@@ -4,7 +4,29 @@
 }
 
 body {
-  margin: 0;
+padding: 0px;
+  margin: 0px;
+}
+
+.container{
+top: 100px;
+}
+
+#app{
+  position: relative;
+  border: 0px
+  padding: 0px;
+  top: 100px;
+
+}
+
+.header {
+  padding: 30px;
+  font-size: 40px;
+  text-align: center;
+  background: lightgray;
+  width: 100%;
+  position: fixed;
 }
 
 .a{
@@ -13,7 +35,7 @@ display: inline-block;
 
 .actions {
     margin-bottom: 20px;
-    margin-top: 20px;
+    margin-top: 40px;
 }
 
 .table {
@@ -32,4 +54,13 @@ form {
   display: flex;
   justify-content: center;
   flex-direction: column;
+}
+
+.footer{
+    padding: 30px;
+    font-size: 40px;
+    text-align: center;
+    background: lightgray;
+    width: 100%;
+    position: fixed;
 }
